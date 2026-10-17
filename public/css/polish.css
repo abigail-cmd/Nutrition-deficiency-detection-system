@@ -1,7 +1,5 @@
 /* ============================================================
-   polish.css  —  drop this into public/css/ and link it after
-   output.css in every view's <head>
-   ============================================================ */
+
 
 /* ── Status colour tokens ─────────────────────────────────── */
 :root {
@@ -217,10 +215,8 @@ select.form-input { cursor: pointer; }
 .rec-card-title  { font-size: 14px; font-weight: 700; color: #0f172a; }
 .rec-food-list   { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 
-/* ── Scroll-reveal animations ────────────────────────────────
-   Driven by public/js/animations.js, which adds .visible to
-   these elements via IntersectionObserver as they enter the
-   viewport. Respects reduced-motion preferences. */
+
+
 .anim-fade-up {
   opacity: 0;
   transform: translateY(24px);

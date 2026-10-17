@@ -6,7 +6,7 @@
 // outcomes — including boundary cases right at the age-50/51 line, to
 // demonstrate the iron and calcium RDA fixes.
 //
-// This runs the exact same rule engine your real form submissions use
+// This runs the exact same rule engine the form submissions use
 // (bmiCalorie -> nutritionRules -> scoringEngine -> recommendationEngine),
 // then saves each result directly, so the data is indistinguishable from
 // a real user having submitted the form. Each record is also backdated
@@ -15,8 +15,7 @@
 // 50 submissions happened in the same second.
 //
 // Usage:  node seed-test-data.js
-// Each run adds 50 more records — delete data/nutrition.db first if you
-// want to start from a clean slate rather than adding to what's there.
+
 
 const { getFullBMIAndCalorieData } = require("./rules/bmiCalorie");
 const { compareAllNutrients } = require("./rules/nutritionRules");
